@@ -1,0 +1,155 @@
+<html>
+
+      <head>
+          <title>Quick search</title>
+          <<meta charset="utf-8" />
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+          <script src="jquery-3.5.1.min.js"></script>
+          <script src="jquery-ui/jquery-ui.js"></script>
+          <link rel ="stylesheet" href="styles.css">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+         <header class ="header" id="header1">
+            <nav>
+              <ul>
+                <li>View Favourites</li>
+                <li>Remove Favourites</li>
+             </ul>
+
+             <div class ="container">
+
+                        <div class="slogan">
+                        <div class="slogan-top">
+                          Find your happy!
+                        </div>
+                        <div class="slogan-bottom">
+                          Search properties for sale and to rent in the UK
+                        </div>
+
+                  </div>
+                </div>
+           </nav>
+           </header>
+
+       </head>
+
+        <body>
+
+
+
+
+
+          <button onclick="goBack()">Go Back</button>
+
+
+          <input id="myInput" type="text" placeholder="Quick search.." style="margin-left:440px">
+
+
+
+  <br><br>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Property type</th>
+      <th>Location</th>
+
+    </tr>
+    </thead>
+    <tbody id="myTable">
+    <tr>
+      <td>House</td>
+      <td>Doe</td>
+
+    </tr>
+    <tr>
+      <td>Flat</td>
+      <td>Moe</td>
+
+    </tr>
+    <tr>
+      <td>House</td>
+      <td>Dooley</td>
+
+    </tr>
+    <tr>
+      <td>House</td>
+      <td>Ravendale</td>
+
+    </tr>
+    <tr>
+      <td>Flat</td>
+      <td>Ravendale</td>
+
+    </tr>
+    <tr>
+      <td>House</td>
+      <td>Ravendale</td>
+
+    </tr>
+    </tbody>
+  </table>
+
+  <p class="note">Refine your search by location or property type! </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <script type="text/javascript">
+
+         function goBack() { // go back
+         window.history.back();
+         }
+         $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+         $("#accordion").accordion(); // ajquery accordion
+
+              $("span").draggable(); // drag and drop
+
+                           $( "#draggable" ).draggable();
+                           $( "#droppable" ).droppable({
+                            drop: function( event, ui ) {
+                                alert("was added to favourites!");
+                                     }
+                                 });
+                                      $( "#droppable" ).droppable({
+                                       out: function( event, ui ) {
+                                             alert("was deleted from favourites!");
+                                           }
+                                       });
+
+                                       $(document).ready(function(){
+                                         $("#myInput").on("keyup", function() {
+                                           var value = $(this).val().toLowerCase();
+                                           $("#myTable tr").filter(function() {
+                                             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                           });
+                                         });
+                                       });
+
+
+
+         </script>
+
+
+</body>
+
+
+
+</html>

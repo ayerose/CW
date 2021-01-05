@@ -1,0 +1,107 @@
+<html>
+
+    <head>
+
+        <title>Javascript</title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+        <script src="jquery-3.5.1.min.js"></script>
+
+       <style type="text/css">
+
+       #kreis{
+
+           width: 150px;
+           height: 150px;
+           border-radius: 50%;
+           background-color: green;
+           margin: 10px;
+
+       }
+
+       .viereck{
+
+        width: 150px;
+           height: 150px;
+           background-color: red;
+           margin: 10px;
+
+       }
+
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+
+        <div id="kreis"></div>
+
+        <div class="viereck"></div>
+
+        <iframe src="https://jquery.com/download/"></iframe>
+
+
+      <div><p>Dies ist etwas Text.</p></div>
+
+
+        <script type="text/javascript">
+
+
+
+
+        //  ("div") oder ("#kreis") oder (".viereck") !!!
+            $("div").click(function(){
+
+            // verschwinden lassen =
+               //$(this).css("display", "none");
+
+
+      // programm soll sagen was angeklickt wurde =
+        if($(this).attr("id") == "kreis") {
+          alert("Kreis wurde geklickt");
+
+        } else {
+          alert("viereck wurde geklickt");
+        }
+
+
+
+
+      //0. zum style ändern =
+            // $("#kreis").css("width", "400px");
+
+     // 1.    alert("Kreis wurde angeklickt");
+            //  $("iframe").attr("src", "https://www.youtube.com/");
+
+
+      // 2. oder für viereck =   $(".viereck").click(function(){
+                               //    alert("Kreis wurde angeklickt");
+
+
+      // 4. for hoover =
+              //  $("div").hover(function(){
+                //  alert($("p").html());
+
+
+
+          });
+
+
+
+
+
+
+        </script>
+
+
+    </body>
+
+
+
+</html>

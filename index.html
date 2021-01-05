@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+           <title>Property 1</title>
+
+
+          <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+          <script src="jquery-3.5.1.min.js"></script>
+          <script src="jquery-ui/jquery-ui.js"></script>
+          <link rel ="stylesheet" href="styles.css">
+
+         <link href ="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+          <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+          <script language="JavaScript" type="text/javascript" src="/Users/Soreya/Desktop/CW/script1.js"></script>
+
+
+
+</head>
+
+
+
+   <body>
+
+  <header class ="header" id="header1">
+   <nav>
+     <ul class="header-navbar-links" >
+        <li>View Favourites</li>
+        <li>Remove Favourites</li>
+     </ul>
+
+
+       <div class ="container">
+
+                  <div class="slogan">
+                  <div class="slogan-top">
+                    Find your happy!
+                  </div>
+                  <div class="slogan-bottom">
+                    Search properties for sale and to rent in the UK
+                  </div>
+
+            </div>
+          </div>
+
+   </nav>
+   </header>
+
+
+
+   <div class="inline">
+      <h3 class="wrapper-filter">Min Bedrooms:</h3>
+      <input id="spinner" value="1" >
+
+      <h3 class="wrapper-filter">Max Bedrooms:</h3>
+      <input id="spinner2" value="3">
+
+
+
+
+    <h3 class="wrapper-filter">Property type:</h3>
+      <select name="property" id="property">
+        <option value="Flat">Flat</option>
+        <option value="House">House</option>
+        <option value="Any" selected>Any</option>
+      </select>
+
+
+     <div class="Time" >
+       <h3 class="wrapper-filter">Time Added</h3>
+       <select name="time" id="time">
+        <option value= "January" , "Feburary","March","April"> January - April (2020)</option>
+        <option value="May", "June", "July", "August">May - August (2020)</option>
+        <option value="September", "October", "November", "December">September - December (2020)</option>
+        <option value="Anytime" selected>Anytime</option>
+       </select>
+      </div>
+
+
+    <p class="box">
+      <h3 class="wrapper-filter">Price Range</h3>
+      <input type="text" id="amount" readonly class="goldSliderText">
+     </p>
+      <div id="slider-range"></div>
+
+
+
+      <br><br>
+
+     <button id="search">Search</button>
+     <div id="placeholder"></div>
+     <button class="getFaves">View Favourites</button>
+ <button class="clearFavourites">Remove All</button>
+
+     </div
+
+
+               <!-- wrapper -->
+               <div class="wrapper">
+                    <h1 class="title">Properties</h1>
+
+
+                   <div class="clear"></div>
+                   <!-- properties -->
+                   <div class="properties">
+                       <!--  property 1 -->
+                       <div class="property">
+                           <img src="http://media.rightmove.co.uk/dir/5k/4992/46521724/4992_PEW130130_IMG_00_0000_max_656x437.JPG" alt="item" />
+                           <h3>3 bedroom house</h3>
+                           <p>Price: <em>£65.0000</em></p>
+                            <p>Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of..</p>
+                           <p>Tenure: Freehold</p>
+                           <p>Type: House</p>
+                           <p>Location:Petts Wood Road, Petts Wood, Orpington"</p>
+                           <p>Added: 12/10/2020</p>
+                           <div class="btn-top"><a class="btn" >Add to Favourites</a>
+                           <a class="btn"  href="./prop1.html">More details</a></div>
+                       </div>
+
+                       <!--  property 2 -->
+                       <div class="property">
+                         <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="item" />
+                          <h3>3 bedroom flat</h3>
+                         <p>Price: <em>£39.9995</em></p>
+                          <p>Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors...</p>
+                         <p>Tenure: Freehold</p
+                         <p>Type: Flat</p>
+                         <p>Location:Crofton Road Orpington BR6"</p>
+                         <p>Added: 14/09/2020</p>
+                         <a class="btnFav" >Add to Favourites</a>
+                         <a class="btn"  href="./prop2.html">More details</a>
+                       </div>
+
+                       <!--  property 3 -->
+                       <div class="property">
+                         <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/" alt="item" />
+                          <h3>6 bedroom house</h3>
+                         <p>Price: <em>£90.0000</em></p>
+                        <p>An exceptional example of one of Mayfair's original Mansions, this Grade II listed townhouse was constructed in 1732 and extensively refurbished in 1908 by famed British Architect Ralph Knott. Today the house has been restored to its former glory, respectful of its history but very much with modern qualities...</p>
+                         <p>Tenure: Freehold</p>
+                         <p>Type: House</p>
+                         <p>Location: Liverpool, Wavertree, L15</p>
+                         <p>Added: 12/10/2020</p>
+                         <a class="btnFav" >Add to Favourites</a>
+                         <a class="btn" href="./prop3.html">More details</a>
+                       </div>
+                        <!--  property 4 -->
+
+                       <div class="property">
+                         <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/" alt="item" />
+                          <h3>5 bedroom house</h3>
+                         <p>Price: <em>£200.000</em></p>
+                          <p>Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated...</p>
+                         <p>Tenure: Freehold</p>
+                         <p>Type: House</p>
+                         <p>Location:London, Kensington, W8</p>
+                         <p>Added: 12/10/2020</p>
+                         <a class="btnFav" >Add to Favourites</a>
+                         <a class="btn"  href="./prop4.html">More details</a>
+                       </div>
+
+                         <!--  property 5 -->
+                       <div class="property">
+                         <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/" alt="item" />
+                          <h3>2 bedroom flat</h3>
+                         <p>Price: <em>£59.9995</em></p>
+                          <p>Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory...</p>
+                         <p>Tenure: Freehold</p>
+                         <p>Type: Flat</p>
+                         <p>Location: Liverpool, Edge Hill, L7"</p>
+                         <p>Added: 12/10/2020</p>
+                         <a class="btnFav" >Add to Favourites</a>
+                         <a class="btn"  href="./prop5.html">More details</a>
+                       </div>
+
+                         <!--  property 6 -->
+                       <div class="property">
+                         <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/" alt="item" />
+                          <h3>3 bedroom house</h3>
+                         <p>Price: <em>£40.0000</em></p>
+                          <p>Located on a sought after road and occupying a 2 acre site, a bespoke family home with the accommodation predominantly arranged over three floors with the benefit of a substantial, self-contained staff lodge. The luxurious entrance hall of this stunning home...</p>
+                         <p>Tenure: Freehold</p>
+                         <p>Type: House</p>
+                         <p>Location: Manchester, Spinningfields, M3""</p>
+                         <p>Added: 12/10/2020</p>
+                         <a class="btnFav" >Add to Favourites</a>
+                         <a class="btn"  href="./prop6.html">More details</a>
+                       </div>
+
+                         <!--  property 7 -->
+                       <div class="property">
+                         <img src="https://images.unsplash.com/photo-1567493756992-e2b6227cddc0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fGhvdXNlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/" alt="item" />
+                          <h3>3 bedroom house</h3>
+                         <p>Price: <em>£39.9995</em></p>
+                          <p>Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat...</p>
+                         <p>Tenure: Freehold</p>
+                         <p>Type: House</p>
+                         <p>Location: Manchester, New Islington, M4"</p>
+                         <p>Added: 12/06/2020</p>
+                         <a class="btnFav" >Add to Favourites</a>
+                         <a class="btn"  href="./prop7.html">More details</a>
+
+                       </div>
+
+                   </div>
+                   <!--/ properties -->
+               </div>
+               <!--/ wrapper -->
+
+
+
+
+
+
+                        <script>
+                          function goBack() {
+                            window.history.back();
+                          }
+
+
+
+                        var data =  {
+                          	"properties": [
+                                  {
+                                      "id":"prop1",
+                          			"type":"House",
+                                      "bedrooms":3,
+                          			"price":650000,
+                          			"tenure":"Freehold",
+                          			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+                          			"location":"Petts Wood Road, Petts Wood, Orpington",
+                          			"picture":"http://media.rightmove.co.uk/dir/5k/4992/46521724/4992_PEW130130_IMG_00_0000_max_656x437.JPG",
+                          			"url":"prop1.html",
+                                      "added": {
+                                          "month":"October",
+                                          "day":12,
+                                          "year":2020
+                                      }
+                                  },
+                          		{
+                                      "id":"prop2",
+                          			"type":"Flat",
+                                      "bedrooms":2,
+                          			"price":399995,
+                          			"tenure":"Freehold",
+                          			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+                          			"location":"Crofton Road Orpington BR6",
+                          			"picture":"https://images.unsplash.com/photo-1515263487990-61b07816b324?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                          			"url":"prop2.html",
+                                      "added": {
+                                          "month":"September",
+                                          "day":14,
+                                          "year":2020
+                                      }
+                                  },
+                                  {
+                                          "id":"prop3",
+                              			"type":"House",
+                                          "bedrooms":6,
+                              			"price":900000,
+                              			"tenure":"Freehold",
+                              			"description":"An exceptional example of one of Mayfair's original Mansions, this Grade II listed townhouse was constructed in 1732 and extensively refurbished in 1908 by famed British Architect Ralph Knott. Today the house has been restored to its former glory, respectful of its history but very much with modern qualities. Spanning over 14,500 sq ft and with grand proportions throughout including an 'L-shaped' drawing room on the first floor leading to a large terrace and a dining room on the ground floor with seating for twenty guests, the house is ideally configured for both formal entertaining and comfortable family living.",
+                              			"location":"Liverpool, Wavertree, L15",
+                              			"picture":"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/",
+                              			"url":"prop3.html",
+                                          "added": {
+                                              "month":"September",
+                                              "day":19,
+                                              "year":2020
+                                          }
+                                      },
+                                      {
+                                              "id":"prop4",
+                                  			"type":"House",
+                                              "bedrooms":5,
+                                  			"price":2000000,
+                                  			"tenure":"Freehold",
+                                  			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+                                  			"location":"London, Kensington, W8",
+                                  			"picture":"https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/",
+                                  			"url":"prop4.html",
+                                              "added": {
+                                                  "month":"October",
+                                                  "day":11,
+                                                  "year":2020
+                                              }
+                                          },
+                                          {
+                                                  "id":"prop5",
+                                      			"type":"Flat",
+                                                  "bedrooms":2,
+                                      			"price":599995,
+                                      			"tenure":"Freehold",
+                                      			"description":"St Saviours is a unique Grade II listed historical building that has been converted into an extraordinary modern seven-bedroom home. The property benefits from a vaulted ceiling, original stone pillars, beautiful views and parking for three cars. Approximately 12,102 sq ft (1,125 sq m). This stunning seven-bedroom freehold home is located in the heart of Knightsbridge and measures approximately 12,102 sq ft. This exceptional property benefits from a magnificent drawing room with 12-metre vaulted ceilings, original stone pillars and oak beams providing a stunning area for comfortable living and spectacular entertaining unlike any other home in Liverpool.",
+                                      		 	"location":"Liverpool, Edge Hill, L7",
+                                      			"picture":"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/",
+                                      			"url":"prop5.html",
+                                                  "added": {
+                                                      "month":"November",
+                                                      "day":1,
+                                                      "year":2020
+                                                  }
+                                              },
+                                              {
+                                                      "id":"prop6",
+                                                "type":"Flat",
+                                                      "bedrooms":2,
+                                                "price":400000,
+                                                "tenure":"Freehold",
+                                                "description":"Located on a sought after road and occupying a 2 acre site, a bespoke family home with the accommodation predominantly arranged over three floors with the benefit of a substantial, self-contained staff lodge. The luxurious entrance hall of this stunning home, has a glass lift to each floor. From the impressive entrance hall, there is the formal sitting and dining room that overlooks the magnificent grounds, that opens onto the breakfast room and in turn opens onto the kitchen. On the first floor there is the master suite with bathroom, four further suites each with en suite bathrooms whilst to the top floor there is a magnificent home office with panoramic views over the gardens and Hampstead Heath beyond. The leisure facilities have been thoughtfully designed and the swimming pool opens on to the garden whilst there are full spa facilities behind.There is also a home gymnasium and billiards room.",
+                                                "location":"Manchester, Spinningfields, M3",
+                                                "picture":"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/",
+                                                "url":"prop6.html",
+                                                      "added": {
+                                                          "month":"September",
+                                                          "day":21,
+                                                          "year":2020
+                                                      }
+                                                  },
+                                                  {
+                                                          "id":"prop7",
+                                                    "type":"Flat",
+                                                          "bedrooms":2,
+                                                    "price":399995,
+                                                    "tenure":"Freehold",
+                                                    "description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+                                                    "location":"Manchester, New Islington, M4",
+                                                    "picture":"https://images.unsplash.com/photo-1567493756992-e2b6227cddc0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fGhvdXNlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60, https://unsplash.com/",
+                                                    "url":"prop7.html",
+                                                          "added": {
+                                                              "month":"June",
+                                                              "day":14,
+                                                              "year":2020
+                                                          }
+                                                      },
+
+                          ]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+  </body>
+  </html>
